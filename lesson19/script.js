@@ -1,6 +1,5 @@
 const nameNode = document.querySelector('.name');
 const avatarNode = document.querySelector('.avatar img');
-const countryNode = document.querySelector('.country');
 const cityNode = document.querySelector('.city');
 const addressNode = document.querySelector('.address');
 const emailNode = document.querySelector('.email');
@@ -13,11 +12,10 @@ async function fillUserData() {
     
     nameNode.innerText = data.name.first + ' ' + data.name.last;
     avatarNode.src = data.picture.large;
-    countryNode.innerText = data.location.country;
-    cityNode.innerText = data.location.city;
-    addressNode.innerText = `${data.location.street.name}, ${data.location.street.numbere}`;
+    cityNode.innerText = `${data.location.country}, ${data.location.city}`;
+    addressNode.innerText = `${data.location.street.name}, ${data.location.street.number}`;
     emailNode.innerText = data.email;
-    phoneNode.innerText = data.phone;
+    phoneNode.innerText = 'Phone: ' + data.phone;
 }
 
 fillUserData();
