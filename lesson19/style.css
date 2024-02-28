@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 25px auto;
+    max-width: 500px;
+    border: 2px solid rgb(44, 74, 17);
+    box-shadow: 2px 2px 6px black;
+    padding: 10px;
+}
+
+.container .data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.container ul.contacts {
+    width: 65%;
+}
