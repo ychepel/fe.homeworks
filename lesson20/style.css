@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.show-product {
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 150%;
+    background-color: rgb(43, 65, 22);
+    color: white;
+    border-radius: 5px;
+    margin: 50px auto;
+}
+
+.container {
+    display: none;
+    max-width: 900px;
+    margin: 10px auto;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.image-container img {
+    width: 300px;
+}
+
+.brand, .price {
+    font-weight: bold;
+}
+
+.data {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.data .details {
+    line-height: 25px;
+}
+
+ul.product-bullets {
+    margin-left: 40px;
+}
